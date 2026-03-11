@@ -1,0 +1,33 @@
+.header{
+    height: 300px;
+    background-image: url('pasta.jpg');
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    background-size: cover;
+    /* background-size: contain; */
+    /* background-size: 200px; */
+}
+h3{
+    font-size: 30px;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+}
+.secondblog{
+    display: none;
+    /* visibility:hidden; keeps the block*/
+}
+.blog{
+    margin: 40px;
+    border: 10px solid tomato;
+    box-shadow: 10px 10px 20px blueviolet;
+}
+.incident{
+    border: 2px solid purple;
+    /* display: block; */
+     /* height width will now work */
+    /* margin: 20px; */
+    /* display: inline-block; */
+}
+.dolor{
+    border: 2px solid peru;
+}

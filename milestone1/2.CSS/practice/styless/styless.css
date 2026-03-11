@@ -1,0 +1,9 @@
+.rd{
+background-color: blueviolet;
+font-style: italic;
+font-size: larger;
+background-image: url(../../Styles/pasta.jpg);
+background-size: 100px;
+background-repeat: repeat-y;
+background-position-x: center;
+}
