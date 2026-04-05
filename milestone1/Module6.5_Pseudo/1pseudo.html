@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo</title>
+    <style>
+        h3{
+            color:peru;
+        }
+        h3:hover{
+            color:tomato;
+            background-color: skyblue;
+        }
+        input:focus{
+            color:blue;
+            /* padding-left: 20px; */
+            outline: 0;
+            border: 1px solid purple;
+            border-radius: 12px;
+        }
+        a:visited{
+            color: gray;
+        }
+        /* li:last-child{
+            color: red;
+        }
+        li:first-child{
+            color:yellowgreen;
+            background-color: aqua;
+        } */
+        li:nth-child(2n){
+            color:purple;
+        }
+        li:nth-child(2n+1){
+            color:goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <h3>My heading</h3>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://en.wikipedia.org/wiki/Madagascar">Madagascar</a>
+    <ul>
+        <li>Alia</li>
+        <li>Dalia</li>
+        <li>Malia</li>
+        <li>Kalia</li>
+        <li>Palaya</li>
+        <li>Jalaiaya</li>
+        <li>Balaia</li>
+    </ul>
+</body>
+</html>
