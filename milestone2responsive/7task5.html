@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .food{
+            display: flex;
+            gap: 20px;
+
+        }
+        img{
+            width:50%;
+        }
+        .food2{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 20px;
+        }
+        @media screen and (max-width: 576px) {
+            .food{
+                flex-direction: column;
+            }
+            .food2{
+                flex-direction: column;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>.food*2>img+.details>h1{Why do we enjoy it}+p>lorem50 -->
+     <div class="container">
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <div class="details">
+                <h1>Why do we enjoy it</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vero aspernatur dolore quasi, corrupti, optio natus sit iure possimus non esse ipsam suscipit nihil repellat quisquam totam error deserunt voluptate incidunt dignissimos deleniti excepturi libero ducimus iusto. Voluptatum at vitae iusto sequi neque accusantium tempora, totam hic perferendis voluptatem nisi!</p>
+            </div>
+        </div>
+        <div class="food2">
+            <img src="images/food.png" alt="">
+            <div class="details">
+                <h1>Why do we enjoy it</h1>
+                <p>Laudantium error beatae non recusandae libero aut iste debitis dolorem perspiciatis laboriosam, veritatis nesciunt sunt reprehenderit. Asperiores, ipsam. Velit odio, perspiciatis repellendus exercitationem laborum harum ipsam facere rem corporis maxime? Error rerum ratione eos voluptatem quis rem? Reiciendis vitae, laboriosam libero blanditiis, ab ullam numquam hic labore perferendis provident alias?</p>
+            </div>
+        </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .food {
+            display: flex;
+            gap: 20px;
+        }
+
+        .food img {
+            width: 50%;
+            border-radius: 5px;
+        }
+        .food button{
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        @media screen and (max-width:576px) {
+            .food{
+                flex-direction: column;
+            }
+            .food img{
+                width: 70%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .container>.food*2>img[src="images/food.png"]h1{Post Title Will Be Here}+p>lorem40^btn{Read More} -->
+    <div class="container">
+        <div class="food">
+            <!-- <div> -->
+                <img src="images/food.png" alt="">
+            <!-- </div> -->
+            <div>
+                <h1>Post Title Will Be Here</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur error eum ducimus pariatur cumque
+                    dolores, dolor esse placeat repudiandae autem fugit molestias corrupti veniam, dolore tempora.
+                    Soluta, vel illo aliquam laboriosam culpa repudiandae saepe optio blanditiis minima unde nisi id.
+                </p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div class="food">
+            <img src="images/food.png" alt="">
+            <div>
+                <h1>Post Title Will Be Here</h1>
+                <p>Aperiam architecto, porro sapiente culpa id iusto nemo voluptates labore est, fugiat ipsum tempore esse,
+                    fugit explicabo reprehenderit adipisci sint cupiditate. Voluptatibus vel fuga ducimus qui, distinctio
+                    totam amet laborum nisi quod, facilis aliquid possimus earum molestiae voluptatum. Facilis, quae.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
