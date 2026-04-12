@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid tomato;
+            background-color: peachpuff;
+            /* property name | duration | easing function | delay */
+            transition: width 5s linear 2s, background-color 5s ease-in 2s, transform 4s 2s;
+        }
+
+        .box:hover {
+            transform: rotate(45deg);
+            width: 300px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Transform: change the shape</li>
+        <li>Translate: This means to move the object</li>
+        <li>Transition: how long it will take to do the change of the shape</li>
+    </ul>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</body>
+
+</html>
