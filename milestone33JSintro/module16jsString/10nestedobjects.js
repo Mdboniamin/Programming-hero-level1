@@ -8,3 +8,6 @@ const college = {
 }
 console.log(college.name)
 console.log(college.unique.color)
+//delete properties
+delete college.class;
+console.log(college)
