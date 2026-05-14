@@ -8,3 +8,8 @@ console.log('------------------');
 doubleIt(100); 
 console.log('------------------');
 doubleIt(500);
+console.log('------------------');
+doubleIt(1000);
+console.log('------------------');
+doubleIt(2000);
+console.log('------------------');
