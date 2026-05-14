@@ -13,3 +13,10 @@ doubleIt(1000);
 console.log('------------------');
 doubleIt(2000);
 console.log('------------------');
+
+function differentNumber(num1, num2){
+    console.log(num1- num2);
+}
+const fatherAge = 50;
+const sonAge = 20;
+differentNumber(fatherAge, sonAge);
