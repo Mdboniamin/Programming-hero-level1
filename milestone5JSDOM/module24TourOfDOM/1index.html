@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour of DOM</title>
+</head>
+
+<body>
+    <header>
+        <h1>Tour of DOM</h1>
+    </header>
+    <main>
+        <h1>Welcome to the Tour of DOM</h1>
+        <ul>
+            <li>shafayet</li>
+            <li>bonobash</li>
+            <li>jalali set</li>
+        </ul>
+
+        <script>
+            // console.log('Welcome to the Tour of DOM');
+            // console.log('hello bole cole gelo');
+            const student = {
+                name: 'shafayet',
+                id: 121,
+                study: function (subject) {
+                    console.log('studying subject', subject);
+                }
+            }
+
+            //document.getElementByTagName
+            const liCollection = document.getElementsByTagName('li');
+            console.log(liCollection);
+            for(const li of liCollection){
+                console.log(li.innerText);
+            }
+        </script>
+        <script src="js/hello.js"></script>
+    </main>
+</body>
+
+</html>
