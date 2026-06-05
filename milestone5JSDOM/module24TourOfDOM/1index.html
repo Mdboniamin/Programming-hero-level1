@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour of DOM</title>
+    <style>
+        #food-title {
+            color: tomato;
+        }
+        .food .foreign {
+            color: blue;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
@@ -12,12 +21,38 @@
         <h1>Tour of DOM</h1>
     </header>
     <main>
-        <h1>Welcome to the Tour of DOM</h1>
-        <ul>
-            <li>shafayet</li>
-            <li>bonobash</li>
-            <li>jalali set</li>
-        </ul>
+        <section>
+            <h1>Welcome to the Tour of DOM</h1>
+            <ul>
+                <li>shafayet</li>
+                <li>bonobash</li>
+                <li>jalali set</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1 id="food-title">Foods I love</h1>
+            <ul class="food">
+                <li>Rice</li>
+                <li>Potato</li>
+                <li>fish</li>
+                <li>Lentils</li>
+                <li class="foreign">Pizza</li>
+                <li class="foreign">Burger</li>
+                <li class="foreign">Pasta</li>
+            </ul>
+        </section>
+
+        <section id="players-container">
+            <h1>Players</h1>
+            <ul id="player-list">
+                <li>Messi</li>
+                <li>Cristiano Ronaldo</li>
+                <li>Neymar</li>
+                <li>Kylian Mbappe</li>
+                <li>Mohammad Salah</li>
+            </ul>
+        </section>
 
         <script>
             // console.log('Welcome to the Tour of DOM');
@@ -26,18 +61,22 @@
                 name: 'shafayet',
                 id: 121,
                 study: function (subject) {
-                    console.log('studying subject', subject);
+                    // console.log('studying subject', subject);
                 }
             }
 
             //document.getElementByTagName
             const liCollection = document.getElementsByTagName('li');
-            console.log(liCollection);
-            for(const li of liCollection){
-                console.log(li.innerText);
+            // console.log(liCollection);
+            for (const li of liCollection) {
+                // console.log(li.innerText);
             }
+            const foodTitleH1 = document.getElementById('food-title');
+            console.log(foodTitleH1.innerText);
+            foodTitleH1.innerText = 'Foods I love to eat';
         </script>
         <script src="js/hello.js"></script>
+        <script src="js/cssInJS.js"></script>
     </main>
 </body>
 
