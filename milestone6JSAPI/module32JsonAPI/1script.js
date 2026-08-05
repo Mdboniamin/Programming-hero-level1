@@ -32,7 +32,17 @@ const loadPost = () =>{
       })
 };
 const displayPost = (posts) => {
+      const postContainer = document.getElementById('post-container');
+
       posts.forEach(post => {
-            console.log(post);
+            const li = document.createElement('li');
+            li.innerText = post.title;
+            postContainer.appendChild(li);
       });
+};
+
+const unloadPost = () =>{
+      const postContainer = document.getElementById('post-container');
+      postContainer.innerText = '';
 }
+
