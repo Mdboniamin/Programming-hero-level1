@@ -18,31 +18,37 @@
 // const parseJSON = JSON.parse(personJSON);
 // console.log(parseJSON);// will convert to object
 
-const loadData = () =>{
+const loadData = () => {
       fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => console.log(json))
+            .then(response => response.json())
+            .then(json => console.log(json))
 };
-const loadPost = () =>{
+const loadPost = () => {
       const url = "https://jsonplaceholder.typicode.com/posts";
       fetch(url)
-      .then((res) => res.json())
-      .then((json) => {
-            displayPost(json);
-      })
+            .then((res) => res.json())
+            .then((json) => {
+                  displayPost(json);
+            })
 };
 const displayPost = (posts) => {
       const postContainer = document.getElementById('post-container');
+      postContainer.innerHTML = '';
 
-      posts.forEach(post => {
-            const li = document.createElement('li');
-            li.innerText = post.title;
-            postContainer.appendChild(li);
+      posts.forEach((post) => {
+            const postCard = document.createElement('div');
+            postCard.innerHTML = `
+            <div class="post-card">
+            <h2>${post.title}</h2>
+            <p>${post.body}</p>
+        </div>`;
+
+        postContainer.append(postCard)
       });
 };
 
-const unloadPost = () =>{
+const unloadPost = () => {
       const postContainer = document.getElementById('post-container');
       postContainer.innerText = '';
 }
-
+loadPost();
